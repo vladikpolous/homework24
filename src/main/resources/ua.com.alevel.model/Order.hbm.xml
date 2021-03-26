@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping xmlns="http://www.hibernate.org/xsd/hibernate-mapping">
+    <class name="ua.com.alevel.model.Order" table="orders">
+    <id name="orderId" column="orderId">
+        <generator class="identity"/>
+    </id>
+    <many-to-one name="product" column="productId"
+                 class="ua.com.alevel.model.Product"
+                 cascade="all"
+    />
+    <many-to-one name="user" column="userId"
+                 class="ua.com.alevel.model.User"
+                 cascade="all"
+    />
+    <property name="quantity" column="quantity"/>
+    <property name="orderTime" column="orderTime"/>
+</class>
+</hibernate-mapping>
