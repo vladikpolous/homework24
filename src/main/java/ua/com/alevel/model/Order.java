@@ -12,8 +12,8 @@ public class Order {
     public String toString() {
         return "Order{" +
                 "orderId=" + orderId +
-                ", user=" + user +
-                ", product=" + product +
+                ", user=" + user.getUserId() +
+                ", product=" + product.productId +
                 ", quantity=" + quantity +
                 ", orderTime=" + orderTime +
                 '}';

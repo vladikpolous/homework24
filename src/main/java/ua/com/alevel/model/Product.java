@@ -15,10 +15,10 @@ public class Product {
     }
 
     public Product(){}
-    Product(int productId, String name, double price, Category category){
-        this.productId = productId;
+    Product(String name, double price, int categoryId){
         this.name = name;
         this.price = price;
+        this.categoryId = categoryId;
     }
     public int getProductId() {
         return productId;
@@ -44,14 +44,6 @@ public class Product {
     public void setPrice(double price) {
         this.price = price;
     }
-
-   /* public Category getCategory() {
-        return category;
-    }
-
-    public void setCategory(Category category) {
-        this.category = category;
-    }*/
 
     @Override
     public String toString() {

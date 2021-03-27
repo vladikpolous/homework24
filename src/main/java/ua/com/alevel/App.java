@@ -1,7 +1,6 @@
 package ua.com.alevel;
 
-import ua.com.alevel.dao.CategoryDao;
-import ua.com.alevel.dao.UserDao;
+
 import ua.com.alevel.help.CategoryHelp;
 import ua.com.alevel.help.OrderHelp;
 import ua.com.alevel.help.ProductHelp;
@@ -39,13 +38,13 @@ public class App {
             case SHOW_USERS:
                 UserHelp.showUser();
                 break;
-            case DELETE_USER:
+            case DELETE_USER://
                 UserHelp.deleteUser(scanner);
                 break;
             case CREATE_PRODUCT:
                 ProductHelp.createProduct(scanner);
                 break;
-            case DELETE_PRODUCT:
+            case DELETE_PRODUCT://
                 ProductHelp.deleteProduct(scanner);
                 break;
             case SHOW_PRODUCTS:
@@ -57,7 +56,7 @@ public class App {
             case CREATE_ORDER:
                 OrderHelp.createOrder(scanner);
                 break;
-            case DELETE_ORDER:
+            case DELETE_ORDER://
                 OrderHelp.deleteOrder(scanner);
                 break;
             default:

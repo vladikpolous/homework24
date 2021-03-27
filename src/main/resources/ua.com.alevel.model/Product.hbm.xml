@@ -10,11 +10,6 @@
         </id>
         <property name="name" column="name"/>
         <property name="price" column="price"/>
-        <many-to-one name="categoryId" column="categoryId"
-                     class="ua.com.alevel.model.Category"
-                     cascade="persist"
-                     lazy="false"
-                     fetch="select"
-        />
+        <property name="categoryId" column="categoryId"/>
     </class>
 </hibernate-mapping>
